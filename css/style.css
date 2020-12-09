@@ -54,8 +54,9 @@ aside {
 }
 
 .view-faded {
-    animation-duration: 500ms;
+    animation-duration: 600ms;
     animation-name: faded;
+    animation-fill-mode: forwards;
 }
 
 /*------------------toleft*/
@@ -68,6 +69,7 @@ aside {
 .main-to-prev{
     animation-duration: 500ms;
     animation-name: center_to_left;
+    animation-fill-mode: forwards;
 }
 
 @keyframes right_to_center {
@@ -80,6 +82,7 @@ aside {
 .next-to-main {
     animation-duration: 500ms;
     animation-name: right_to_center;
+    animation-fill-mode: forwards;
 }
 
 /*------------------toright*/
@@ -92,15 +95,17 @@ aside {
 .main-to-next{
     animation-duration: 500ms;
     animation-name: center_to_right;
+    animation-fill-mode: forwards;
 }
 
 @keyframes left_to_center {
     to {
-        transform: scale(1.2) translateX(300px);
+        transform: scale(1.2) translateX(250px);
     }
 }
 
 .prev-to-main {
     animation-duration: 500ms;
     animation-name: left_to_center;
+    animation-fill-mode: forwards;
 }
