@@ -4,7 +4,7 @@
     font-family: "Segoe UI";
 }
 
-body, html {
+body, html{
     height: 100%;
 }
 
@@ -14,10 +14,34 @@ header {
 
 main {
     background: blue;
+    position: relative;
 }
 
 aside {
     background: green;
+}
+
+/*------------------corps------------------*/
+#corps {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+/*------------------categories------------------*/
+#menu-categs {
+    width: 100%;
+}
+
+#list-categ ul li{
+    list-style-type: none;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+#list-categ ul li:hover{
+    font-weight: bold;
 }
 
 /*------------------main view------------------*/
@@ -32,19 +56,51 @@ aside {
     background: gray;
 }
 
+#view-prev {
+    filter: brightness(0.2);
+}
+
+#view-next {
+    filter: brightness(0.2);
+}
+
 #view-main {
     transform: scale(1.2);
     padding: 2px;
+    z-index: 5;
 }
 
 /*---bt changeur*/
 .bt-change {
+    color: white;
+    font-size: 4em;
+    top: 40px;
     position: absolute;
+    width: 75px;
+    z-index: 20;
+    background: transparent;
+    transform: scaleY(2);
+
+    border: none;
+}
+
+.bt-change:hover {
+    cursor: pointer;
+}
+
+.bt-change:focus {
+    border: none;
+    outline:none;
 }
 
 #bt-next {
     right: 0px;
 }
+
+#bt-prev {
+    left: 0px;
+}
+
 
 /*------------------animation------------------*/
 @keyframes faded {
@@ -63,6 +119,7 @@ aside {
 @keyframes center_to_left {
     to {
         transform: scale(1) translateX(-300px);
+        filter: brightness(0.2);
     }
 }
 
@@ -108,4 +165,23 @@ aside {
     animation-duration: 500ms;
     animation-name: left_to_center;
     animation-fill-mode: forwards;
+}
+
+/*-------------------miniature------------------*/
+.mini-content img {
+    width : 100px;
+}
+
+.mini-content {
+    padding: 2px;
+    border: white solid 1px;
+    display: flex;
+    cursor: pointer;
+}
+
+#miniature-container {
+    background: #00002b;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
 }
