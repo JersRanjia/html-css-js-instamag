@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI";
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    background: red;
+}
+
+main {
+    background: blue;
+}
+
+aside {
+    background: green;
+}
+
+/*------------------main view------------------*/
+#view-container {
+    background: darkblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-image {
+    background: gray;
+}
+
+#view-main {
+    transform: scale(1.2);
+    padding: 2px;
+}
+
+/*---bt changeur*/
+.bt-change {
+    position: absolute;
+}
+
+#bt-next {
+    right: 0px;
+}
+
+/*------------------animation------------------*/
+@keyframes faded {
+    to {
+        opacity: 0;
+    }
+}
+
+.view-faded {
+    animation-duration: 500ms;
+    animation-name: faded;
+}
+
+/*------------------toleft*/
+@keyframes center_to_left {
+    to {
+        transform: scale(1) translateX(-300px);
+    }
+}
+
+.main-to-prev{
+    animation-duration: 500ms;
+    animation-name: center_to_left;
+}
+
+@keyframes right_to_center {
+    to {
+        transform: translateX(-300px) scale(1.2);
+    }
+}
+
+
+.next-to-main {
+    animation-duration: 500ms;
+    animation-name: right_to_center;
+}
+
+/*------------------toright*/
+@keyframes center_to_right {
+    to {
+        transform: scale(1) translateX(300px);
+    }
+}
+
+.main-to-next{
+    animation-duration: 500ms;
+    animation-name: center_to_right;
+}
+
+@keyframes left_to_center {
+    to {
+        transform: scale(1.2) translateX(300px);
+    }
+}
+
+.prev-to-main {
+    animation-duration: 500ms;
+    animation-name: left_to_center;
+}
