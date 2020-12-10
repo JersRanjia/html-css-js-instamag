@@ -51,10 +51,10 @@
 
             <section id="miniature-container">
                 <div class="mini-content" onclick="select_mini(0)">
-                    <img src="img/vacances/panorama.jpg" id="mini-img1" alt="mini-img1" />
+                    <img src="img/vacances/livres.jpg" id="mini-img1" alt="mini-img1" />
                 </div>
                 <div class="mini-content" onclick="select_mini(1)">
-                    <img src="img/vacances/livres.jpg" id="mini-img2" alt="mini-img2"/>
+                    <img src="img/vacances/panorama.jpg" id="mini-img2" alt="mini-img2"/>
                 </div>
                 <div class="mini-content" onclick="select_mini(2)">
                     <img src="img/vacances/sables.jpg" id="mini-img3" alt="mini-img3"/>
@@ -69,8 +69,8 @@
         <aside id="menu-categs">
             <nav id="list-categ">
                 <ul>
-                    <li>Vacances</li>
-                    <li>Travaux</li>
+                    <li onclick="change_album_to_vacs()">Vacances</li>
+                    <li onclick="change_album_to_trav()">Travaux</li>
                 </ul>
             </nav>
         </aside>
@@ -82,7 +82,7 @@
 
 <script src="js/utils.js" ></script>
 <script src="js/view-animation.js" ></script>
-<script src="js/albums-changing.js"></script>
 <script src="js/init-miniature.js"></script>
+<script src="js/albums-changing.js"></script>
 
 </html>
