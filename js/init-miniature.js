@@ -7,7 +7,7 @@ function init_view_by_mini() {
 
 function select_mini(nbr) {
 
-    selected = nbr
+    setSelected(nbr)
 
     let nb_prev = nbr - 1
     let nb_next = nbr + 1

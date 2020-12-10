@@ -1,3 +1,7 @@
+var class_selectedAlbum = "selected-album"
+
+var albums = document.querySelectorAll("#list-categ ul li")
+
 function change_album_to_vacs() {
 
     let path = "img/vacances/"
@@ -10,6 +14,8 @@ function change_album_to_vacs() {
     reload_mini_tab()
     init_view_by_mini()
     reinit_select_index()
+    albums[0].classList.add(class_selectedAlbum)
+    albums[1].classList.remove(class_selectedAlbum)
 
 }
 
@@ -25,6 +31,8 @@ function change_album_to_trav() {
     reload_mini_tab()
     init_view_by_mini()
     reinit_select_index()
+    albums[1].classList.add(class_selectedAlbum)
+    albums[0].classList.remove(class_selectedAlbum)
 
 }
 
@@ -37,6 +45,6 @@ function reload_mini_tab() {
 
 function reinit_select_index() {
 
-    selected = 1 //2eme
+    setSelected(1)//2eme
 
 }

@@ -82,7 +82,7 @@ aside {
     justify-content: right;
 }
 
-/*------------------categories------------------*/
+/*------------------menu categories------------------*/
 #menu-categs {
     padding-top: 20px;
     width: 150px;
@@ -97,6 +97,10 @@ aside {
 
 #list-categ ul li:hover{
     font-weight: bold;
+}
+
+.selected-album {
+    text-decoration: underline;
 }
 
 /*------------------main view------------------*/
@@ -262,4 +266,8 @@ aside {
     padding: 5px;
     display: flex;
     justify-content: center;
+}
+
+.selected-mini {
+    border-color: dodgerblue;
 }

@@ -6,6 +6,8 @@ var img_next = view_next.getElementsByTagName("img")[0];
 var img_main = view_main.getElementsByTagName("img")[0];
 var img_prev = view_prev.getElementsByTagName("img")[0];
 
+var class_selectedMini = "selected-mini";
+
 var menu = document.getElementById("menu-categs")
 
 var list_firstImg = document.querySelectorAll(".mini-content img")
@@ -20,3 +22,13 @@ function mod(x, n) {
 function modL(x) {
     return mod(x, list_firstImg.length)
 };
+
+function getSelected() {
+    return selected
+}
+
+function setSelected(number) {
+    list_firstImg[selected].parentElement.classList.remove(class_selectedMini)
+    selected = modL(number)
+    list_firstImg[selected].parentElement.classList.add(class_selectedMini)
+}

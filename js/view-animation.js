@@ -1,13 +1,11 @@
 
 function next_view() {
 
-    console.log(selected);
-
     let class_mainToPrev = "main-to-prev"
     let class_nextToMain = "next-to-main";
     let class_viewFaded = "view-faded"
 
-    let index_main = modL(selected + 1)
+    let index_main = modL(getSelected() + 1)
     let index_prev = modL(index_main - 1)
     let index_next = modL(index_main + 1)
 
@@ -28,18 +26,17 @@ function next_view() {
     view_main.classList.add(class_mainToPrev)
     view_prev.classList.add(class_viewFaded)
 
-    selected = modL(selected + 1)
+    setSelected(getSelected() + 1)
 
 }
 
 function prev_view() {
 
-    console.log(selected);
     let class_mainToNext = "main-to-next"
     let class_prevToMain = "prev-to-main"
     let class_viewFaded = "view-faded"
 
-    let index_main = modL(selected - 1)
+    let index_main = modL(getSelected() - 1)
     let index_prev = modL(index_main - 1)
     let index_next = modL(index_main + 1)
 
@@ -61,7 +58,7 @@ function prev_view() {
     view_prev.classList.add(class_prevToMain)
     view_next.classList.add(class_viewFaded)
 
-    selected = modL(selected - 1)
+    setSelected(getSelected() - 1)
 
 }
 
