@@ -11,7 +11,7 @@ var list_firstImg = document.querySelectorAll(".mini-content img")
 var selected = 1 //2eme
 
 function mod(x, n) {
-    var m = (( x % n) + n) % n;
+    let m = (( x % n) + n) % n;
     return m < 0 ? m + Math.abs(n) : m;
 };
 

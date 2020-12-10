@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Segoe UI";
+    font-size: 20px;
 }
 
 body, html{
@@ -9,21 +10,28 @@ body, html{
 }
 
 header {
-    background: red;
+    /*background: red;*/
+    background: #0c111f;
     height: 50px;
     display: flex;
     position: relative;
 }
 
 main {
-    background: blue;
-    position: relative;
+    /*background: blue;*/
+    background: #01010a;
     overflow: hidden;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 aside {
-    background: green;
+    border-top: solid black 1px;
+    background: #0c111f;
 }
 
 /*------------------header------------------*/
@@ -34,7 +42,7 @@ aside {
 #app-name {
     height: 100%;
     text-align: center;
-    color: white;
+    color: #c5d3dc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,10 +52,24 @@ aside {
     position: absolute;
     right: 0;
     height: 100%;
+    width: 125px;
+    background: transparent;
+    border: none;
+    color: #c5d3dc;
 }
+
+#bt-menu:hover {
+    cursor: pointer;
+}
+
+#bt-menu:focus {
+    outline: none;
+}
+
 
 /*------------------corps------------------*/
 #corps {
+    background: #01010a;
     height: 100%;
     display: flex;
     justify-content: right;
@@ -55,14 +77,15 @@ aside {
 
 /*------------------categories------------------*/
 #menu-categs {
-    width: 100px;
+    padding-top: 20px;
+    width: 150px;
 }
 
 #list-categ ul li{
     list-style-type: none;
     cursor: pointer;
     text-align: center;
-    color: white;
+    color: #c5d3dc;
 }
 
 #list-categ ul li:hover{
@@ -71,16 +94,17 @@ aside {
 
 /*------------------main view------------------*/
 #view-container {
-    background: darkblue;
+    /*background: darkblue;*/
     padding: 20px;
     display: flex;
     justify-content: center;
     height: 250px;
-    min-width: 500px;
+    min-width: 300px;
+    position: relative;
 }
 
 .view-image {
-    background: gray;
+    background: #24335f;
     display: flex;
     align-items: center;
 
@@ -100,7 +124,7 @@ aside {
     z-index: 5;
 }
 
-/*---bt changeur*/
+/*---bt slide*/
 .bt-change {
     color: white;
     font-size: 4em;
@@ -211,7 +235,7 @@ aside {
 }
 
 #miniature-container {
-    background: #00002b;
+    background: #01010a;
     padding: 5px;
     display: flex;
     justify-content: center;
