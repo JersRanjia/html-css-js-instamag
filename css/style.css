@@ -10,15 +10,40 @@ body, html{
 
 header {
     background: red;
+    height: 50px;
+    display: flex;
+    position: relative;
 }
 
 main {
     background: blue;
     position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 aside {
     background: green;
+}
+
+/*------------------header------------------*/
+#icone {
+    height: 100%;
+}
+
+#app-name {
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bt-menu {
+    position: absolute;
+    right: 0;
+    height: 100%;
 }
 
 /*------------------corps------------------*/
@@ -30,7 +55,7 @@ aside {
 
 /*------------------categories------------------*/
 #menu-categs {
-    width: 100%;
+    width: 100px;
 }
 
 #list-categ ul li{
@@ -51,10 +76,14 @@ aside {
     display: flex;
     justify-content: center;
     height: 250px;
+    min-width: 500px;
 }
 
 .view-image {
     background: gray;
+    display: flex;
+    align-items: center;
+
 }
 
 #view-prev {
@@ -111,7 +140,7 @@ aside {
 }
 
 .view-faded {
-    animation-duration: 600ms;
+    animation-duration: 300ms;
     animation-name: faded;
     animation-fill-mode: forwards;
 }
@@ -125,7 +154,7 @@ aside {
 }
 
 .main-to-prev{
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-name: center_to_left;
     animation-fill-mode: forwards;
 }
@@ -138,7 +167,7 @@ aside {
 
 
 .next-to-main {
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-name: right_to_center;
     animation-fill-mode: forwards;
 }
@@ -151,7 +180,7 @@ aside {
 }
 
 .main-to-next{
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-name: center_to_right;
     animation-fill-mode: forwards;
 }
@@ -163,7 +192,7 @@ aside {
 }
 
 .prev-to-main {
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-name: left_to_center;
     animation-fill-mode: forwards;
 }
@@ -177,6 +206,7 @@ aside {
     padding: 2px;
     border: white solid 1px;
     display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
