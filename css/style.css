@@ -9,6 +9,10 @@ body, html{
     height: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     /*background: red;*/
     background: #0c111f;
@@ -32,6 +36,9 @@ main {
 aside {
     border-top: solid black 1px;
     background: #0c111f;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    /*animation: none;*/
 }
 
 /*------------------header------------------*/
@@ -219,6 +226,22 @@ aside {
     animation-duration: 300ms;
     animation-name: left_to_center;
     animation-fill-mode: forwards;
+}
+
+/*------------------animation menu*/
+@keyframes menu_to_none{
+    to {
+        width: 0;
+    }
+}
+
+@keyframes menu_to_show{
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
 }
 
 /*-------------------miniature------------------*/

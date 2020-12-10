@@ -6,7 +6,7 @@ var img_next = view_next.getElementsByTagName("img")[0];
 var img_main = view_main.getElementsByTagName("img")[0];
 var img_prev = view_prev.getElementsByTagName("img")[0];
 
-var bt_menu = document.getElementById("bt-menu")
+var menu = document.getElementById("menu-categs")
 
 var list_firstImg = document.querySelectorAll(".mini-content img")
 
