@@ -10,6 +10,7 @@ function change_album_to_vacs() {
     imgs[1].src = path.concat("panorama.jpg")
     imgs[2].src = path.concat("sables.jpg")
     imgs[3].src = path.concat("voiture.jpg")
+    imgs[4].src = path.concat("direction.jpg")
 
     reload_mini_tab()
     init_view_by_mini()
@@ -27,6 +28,7 @@ function change_album_to_trav() {
     imgs[1].src = path.concat("engins.jpg")
     imgs[2].src = path.concat("micall.jpg")
     imgs[3].src = path.concat("toit.jpg")
+    imgs[4].src = path.concat("chantier.jpg")
 
     reload_mini_tab()
     init_view_by_mini()
@@ -48,3 +50,5 @@ function reinit_select_index() {
     setSelected(1)//2eme
 
 }
+
+change_album_to_vacs()
