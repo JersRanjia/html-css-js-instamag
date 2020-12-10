@@ -197,6 +197,7 @@ aside {
 @keyframes right_to_center {
     to {
         transform: translateX(-300px) scale(1.2);
+        filter: brightness(1);
     }
 }
 
@@ -211,6 +212,7 @@ aside {
 @keyframes center_to_right {
     to {
         transform: scale(1) translateX(300px);
+        filter: brightness(0.2);
     }
 }
 
@@ -223,6 +225,7 @@ aside {
 @keyframes left_to_center {
     to {
         transform: scale(1.2) translateX(250px);
+        filter: brightness(1);
     }
 }
 
@@ -242,9 +245,6 @@ aside {
 @keyframes menu_to_show{
     from {
         width: 0;
-    }
-    to {
-        width: 150px;
     }
 }
 
@@ -270,4 +270,18 @@ aside {
 
 .selected-mini {
     border-color: dodgerblue;
+}
+
+/*-------------------responsivity------------------*/
+@media screen and (max-width: 500px) {
+    #corps {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    #menu-categs {
+        width: 100%;
+    }
+
 }
